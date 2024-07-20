@@ -61,8 +61,8 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(dt, 'decision_tree')
     
     # add tags for easy navigation 
-    mlflow.set_tags('author', 'param.unik')
-    mlflow.set_tags('model', 'decision tree experiment')
+    mlflow.set_tag('author', 'param.unik')
+    mlflow.set_tag('model', 'decision tree experiment')
         
     print('accuracy -> ', accuracy)
     
